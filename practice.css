@@ -1,0 +1,27 @@
+body {
+    background-color: #f5ebeb;
+    color: #333333;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.content {
+    margin: 20px;
+}
+
