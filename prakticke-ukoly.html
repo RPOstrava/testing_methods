@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praktická stránka</title>
     <link rel="stylesheet" href="practice.css">
+    
 </head>
 <body>
     <header>
@@ -23,53 +24,53 @@
             </ul>
             <h3>9 běžně používaných testů</h3>
             <ul>
-                <li><a href="#">Test funkčnosti tlačítka</a></li>
+                <li><a href="#" onclick="toggleDescription('test1')">Test funkčnosti tlačítka</a></li>
                 <div id="test1" class="hidden">
                     <p>Tento test ověřuje, zda tlačítko provádí požadovanou akci nebo reakci při stisknutí.
                         Příklad: Pokud máte tlačítko "Odeslat formulář", testovali byste, zda se formulář skutečně odesílá po kliknutí na toto tlačítko.</p>
                 </div>
-                <li><a href="#">Test validace formuláře</a></li>
+                <li><a href="#" onclick="toggleDescription('test2')">Test validace formuláře</a></li>
                 <div id="test2" class="hidden">
                     <p>Tento test zjišťuje, zda formulář správně validuje vstupy uživatele podle předem stanovených pravidel.
                         Příklad: Když vyplníte e-mailovou adresu ve formuláři, testovali byste, zda formulář odmítne neplatnou e-mailovou adresu, například bez @ znaku.</p>
                 </div>
-                <li><a href="#">Test ověření textu</a></li>
+                <li><a href="#" onclick="toggleDescription('test3')">Test ověření textu</a></li>
                 <div id="test3" class="hidden">
                     
                     <p>Tento test kontroluje správnost textu na stránce nebo v aplikaci.
                         Příklad: Pokud máte na webové stránce titulek "Vítejte na našem webu", testovali byste, zda se tento text skutečně zobrazuje na požadovaném místě.</p>
                 </div>
-                <li><a href="#">Test načasování</a></li>
+                <li><a href="#" onclick="toggleDescription('test4')">Test načasování</a></li>
                 <div id="test4" class="hidden">
                     
                     <p>Tento test ověřuje, zda jsou časové aspekty aplikace nebo stránky v souladu s očekáváním.
                         Příklad: Když máte načasovanou událost, například zobrazení reklamy po 30 sekundách, testovali byste, zda se reklama zobrazí po uplynutí tohoto času.</p>
                 </div>
-                <li><a href="#">Test navigace</a></li>
+                <li><a href="#" onclick="toggleDescription('test5')">Test navigace</a></li>
                 <div id="test5" class="hidden">
                     
                     <p>Tento test se zaměřuje na ověření správnosti navigace uživatelů po stránce nebo v aplikaci.
                         Příklad: Pokud máte navigační menu s položkami "Domů", "O nás" a "Kontakt", testovali byste, zda se při kliknutí na tyto položky přesunete na příslušné stránky.</p>
                 </div>
-                <li><a href="#">Test kompatibility prohlížeče</a></li>
+                <li><a href="#" onclick="toggleDescription('test6')">Test kompatibility prohlížeče</a></li>
                 <div id="test6" class="hidden">
                     
                     <p>Tento test ověřuje, zda je webová stránka nebo aplikace správně zobrazována a funkční na různých prohlížečích.
                         Příklad: Testovali byste zobrazení a funkčnost stránky ve webových prohlížečích jako Chrome, Firefox, Safari atd.</p>
                 </div>
-                <li><a href="#">Test API</a></li>
+                <li><a href="#" onclick="toggleDescription('test7')">Test API</a></li>
                 <div id="test7" class="hidden">
                     
                     <p>Tento test ověřuje, zda rozhraní API funguje správně a odpovídá specifikacím.
                         Příklad: Pokud máte API pro získání seznamu uživatelů, testovali byste, zda volání tohoto API vrací očekávané údaje ve správném formátu.</p>
                 </div>
-                <li><a href="#">Test webové služby</a></li>
+                <li><a href="#" onclick="toggleDescription('test8')">Test webové služby</a></li>
                 <div id="test8" class="hidden">
                     
                     <p>Tento test ověřuje funkčnost a integritu webové služby, která může poskytovat různé funkce nebo data.
                         Příklad: Když máte webovou službu pro získání aktuálního počasí, testovali byste, zda tato služba vrací přesné informace o počasí na základě zadaných parametrů.</p>
                 </div>
-                <li><a href="#">Test zabezpečení</a></li>
+                <li><a href="#" onclick="toggleDescription('test9')">Test zabezpečení</a></li>
                 <div id="test9" class="hidden">
                     
                     <p>Tento test ověřuje, zda je aplikace nebo stránka chráněna před různými bezpečnostními hrozbami a útoky.
@@ -89,5 +90,21 @@
         </script>
     </main>
     <a href="index.html" class="home-button">Domů</a>
+    <script>
+        window.addEventListener('load', function() {
+            const descriptions = document.querySelectorAll('.description');
+            descriptions.forEach(function(description) {
+                if (!description.classList.contains('hidden')) {
+                    description.classList.add('hidden');
+                }
+            });
+        });
+
+        
+        function toggleDescription(id) {
+            const description = document.getElementById(id);
+            description.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
