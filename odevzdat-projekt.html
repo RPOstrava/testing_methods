@@ -23,11 +23,11 @@
         
         <script>
             document.getElementById('projectForm').addEventListener('submit', function(event) {
-                event.preventDefault(); // Zabraňuje výchozímu chování formuláře (jeho odeslání)
+                event.preventDefault(); 
                 var jmeno = document.getElementById('jmeno').value;
-                // Zde můžete provést další akce, například odeslání dat na server nebo zpracování formuláře
+                
                 alert('Formulář byl úspěšně odeslán s jménem: ' + jmeno);
-                // Spustit animaci rachejtle
+                
                 document.getElementById('fireworks').classList.add('explode');
             });
         </script>    
