@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diskusní fórum</title>
+    <link rel="stylesheet" href="diskuzni-forum.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Automatizované testování</h1>
+        <h2>Diskusní fórum</h2>
+    </header>
+    <main>
+        <section class="content">
+            <h3>Téma: Automatizované testování</h3>
+            <div class="question">
+                <a href="#">Otázka: Jaký je nejlepší nástroj pro automatizované testování?</a>
+                <div class="response-input">
+                    <input type="text" placeholder="Napište vaši odpověď">
+                </div>
+            </div>
+            <div class="question">
+                <a href="#">Otázka: Jak začít s automatizovaným testováním?</a>
+                <div class="response-input">
+                    <input type="text" placeholder="Napište vaši odpověď">
+                </div>
+            </div>
+            <div class="question">
+                <a href="#">Otázka: Jaký je význam automatizovaného testování?</a>
+                <div class="response-input">
+                    <input type="text" placeholder="Napište vaši odpověď">
+                </div>
+            </div>
+            <div class="question">
+                <a href="#">Otázka: Které jsou nejčastější chyby při automatizovaném testování?</a>
+                <div class="response-input">
+                    <input type="text" placeholder="Napište vaši odpověď">
+                </div>
+            </div>
+            <div class="question">
+                <a href="#">Otázka: Jaké jsou výhody automatizovaného testování?</a>
+                <div class="response-input">
+                    <input type="text" placeholder="Napište vaši odpověď">
+                </div>
+            </div>
+            <button onclick="submitResponses()" class="response-button">Odeslat odpovědi</button>
+            <p id="response-message" class="hidden"></p>
+        </section>
+    </main>
+    <a href="index.html" class="home-button">Domů</a>
+    <script>
+        function submitResponses() {
+            const responseMessage = document.getElementById('response-message');
+            const responses = document.querySelectorAll('.response-input input');
+            let allResponsesFilled = true;
+
+            responses.forEach(response => {
+                if (response.value.trim() === '') {
+                    allResponsesFilled = false;
+                }
+            });
+
+            if (allResponsesFilled) {
+                responseMessage.textContent = "Vaše odpovědi byly zaznamenány";
+            } else {
+                responseMessage.textContent = "Prosím, vyplňte všechny odpovědi.";
+            }
+
+            responseMessage.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

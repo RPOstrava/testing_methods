@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odevzdání projektu</title>
+    <link rel="stylesheet" href="odevzdat-project.css">
+</head>
+<body>
+    <header>
+        <h1>Automatizované testování</h1>
+        <h2>Odevzdání projektu</h2>
+    </header>
+    <main>
+        <section class="content">
+            <h3>Formulář pro odevzdání projektu</h3>
+            <form action="#" id="projectForm">
+                <label for="jmeno">Jméno a příjmení studenta:</label>
+                <input type="text" id="jmeno" name="jmeno" required>
+                <button type="submit">Odeslat</button>
+            </form>
+        </section>
+        
+        <script>
+            document.getElementById('projectForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Zabraňuje výchozímu chování formuláře (jeho odeslání)
+                var jmeno = document.getElementById('jmeno').value;
+                // Zde můžete provést další akce, například odeslání dat na server nebo zpracování formuláře
+                alert('Formulář byl úspěšně odeslán s jménem: ' + jmeno);
+                // Spustit animaci rachejtle
+                document.getElementById('fireworks').classList.add('explode');
+            });
+        </script>    
+    </main>
+    
+    <a href="index.html" class="home-button">Domů</a>
+</body>
+</html>

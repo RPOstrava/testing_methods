@@ -1,0 +1,9 @@
+End-to-End (E2E) testy: Vytvořte testovací scénáře, které simulují interakce uživatele s vaší aplikací od začátku do konce. To může zahrnovat navigaci po stránkách, vyplňování formulářů, klikání na tlačítka a ověření výsledků.
+
+Unit testy: Implementujte unit testy pro jednotlivé funkce nebo komponenty vaší aplikace. Tyto testy by měly ověřit, že jednotlivé části kódu fungují správně a vracejí očekávané výsledky.
+
+Smoke testy: Zahrňte jednoduché smoke testy, které ověří základní funkčnost vaší aplikace po spuštění. Například, můžete ověřit, že hlavní stránka se načte bez chyb.
+
+Integration testy: Pokud máte více komponent nebo služeb v aplikaci, můžete implementovat integration testy, které ověří, že tyto komponenty správně spolupracují.
+
+Regression testy: Pokud máte nějakou existující funkcionalitu, kterou jste upravoval nebo rozšiřoval, můžete implementovat regression testy, které ověří, že tyto změny nezpůsobily žádné neočekávané problémy.

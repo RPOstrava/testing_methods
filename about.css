@@ -1,0 +1,64 @@
+body {
+    background-image: url('images/pozadi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.team-section,
+.contact-section {
+    width: 100%; 
+    margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .team-section,
+    .contact-section {
+        width: 48%;
+    }
+}
+
+h3 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    color: #000000;
+}

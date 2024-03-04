@@ -1,0 +1,16 @@
+ {
+  "name": "automatizace_projekt",
+  "version": "1.0.0",
+  "main": "cypress_test.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.6.6"
+  }
+}
