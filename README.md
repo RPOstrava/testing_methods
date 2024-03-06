@@ -8,3 +8,5 @@ The site is intentionally more error-prone so that it can be tested meaningfully
 Different methods will be tested (e2e, unit etc)
 
 27.2.2024 css changes updated.
+
+4.3.2024 starting with cypress testing (after fixing conflicts with github).
