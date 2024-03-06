@@ -10,3 +10,5 @@ Different methods will be tested (e2e, unit etc)
 27.2.2024 css changes updated.
 
 4.3.2024 starting with cypress testing (after fixing conflicts with github).
+
+6.3.2024 E2E and Unit test uploaded.
