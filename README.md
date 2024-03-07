@@ -12,3 +12,5 @@ Different methods will be tested (e2e, unit etc)
 4.3.2024 starting with cypress testing (after fixing conflicts with github).
 
 6.3.2024 E2E and Unit test uploaded.
+
+7.3.2024 smoke and integration test added.
