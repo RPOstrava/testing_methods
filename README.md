@@ -14,3 +14,5 @@ Different methods will be tested (e2e, unit etc)
 6.3.2024 E2E and Unit test uploaded.
 
 7.3.2024 smoke and integration test added.
+
+11.3.2024 Pytest is next, but I still have to learn it, at least the basics.
