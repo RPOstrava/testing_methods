@@ -1,7 +1,7 @@
 # 4testing_methods
 
 
-The site will be used for automated testing in several different programs/frameworks. the texts on the page will be in the Czech language.
+The site will be used for automated testing in several different methods. the texts on the page will be in the Czech language.
 
 The site is intentionally more error-prone so that it can be tested meaningfully
 
