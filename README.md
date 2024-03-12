@@ -16,4 +16,5 @@ Different methods will be tested (e2e, unit etc)
 7.3.2024 smoke and integration test added.
 
 11.3.2024 Pytest is next, but I still have to learn it, at least the basics.
+
 12.3.2024 Pytest cancelled. project is ended.
